@@ -139,7 +139,9 @@ ggplot(YS,aes(x=Raw))+
   geom_histogram(aes(y=..density..),fill='white',color='black')+
   stat_bin(bins=100,fill='white',color='black')+
   geom_line(data = pp, aes(x=V3, y=V2, col=V1),lwd=1.1)+
-  scale_color_manual(values=rainbow(g+1),name='Cluster')
+  scale_color_manual(values=rainbow(g+1),name='Cluster')+
+  xlab('bin')+
+  ylab('Fequency/Density')
 
 ```
 

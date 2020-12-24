@@ -171,7 +171,9 @@ ggplot(YS,aes(x=Raw))+
   geom_histogram(aes(y=..density..),fill='white',color='black')+
   stat_bin(bins=100,fill='white',color='black')+
   geom_line(data = pp, aes(x=V3, y=V2, col=V1),lwd=1.1)+
-  scale_color_manual(values=rainbow(g+1),name='Cluster')
+  scale_color_manual(values=rainbow(g+1),name='Cluster')+
+  xlab('bin')+
+  ylab('Fequency/Density')
 ```
 
 ![](CoulterCounterProcessing_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
@@ -210,23 +212,23 @@ formattable(Out.table)
   </tr>
   <tr>
    <td style="text-align:right;"> Cluster2 </td>
-   <td style="text-align:right;"> 16763 </td>
+   <td style="text-align:right;"> 9535 </td>
   </tr>
   <tr>
    <td style="text-align:right;"> Cluster3 </td>
-   <td style="text-align:right;"> 16700 </td>
+   <td style="text-align:right;"> 13253 </td>
   </tr>
   <tr>
    <td style="text-align:right;"> Cluster4 </td>
-   <td style="text-align:right;"> 6746 </td>
+   <td style="text-align:right;"> 24627 </td>
   </tr>
   <tr>
    <td style="text-align:right;"> Cluster5 </td>
-   <td style="text-align:right;"> 41593 </td>
+   <td style="text-align:right;"> 34686 </td>
   </tr>
   <tr>
    <td style="text-align:right;"> Cluster6 </td>
-   <td style="text-align:right;"> 1263 </td>
+   <td style="text-align:right;"> 964 </td>
   </tr>
 </tbody>
 </table>
